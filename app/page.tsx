@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import ProductCard from "@/components/productCard";
 import { useProductFilter } from "@/lib/hooks/useProductFilter";
 import { products } from "@/lib/products";
-import { useEffect, useState } from "react";
 
 export default function HomePage() {
   const { filtered, query, setQuery, category, setCategory } =

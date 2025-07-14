@@ -1,7 +1,6 @@
 'use client';
 
 import ProductCard from '@/components/productCard';
-import { products } from '@/lib/products';
 import { useProductFilter } from '@/lib/hooks/useProductFilter';
 
 export default function AllProductsPage() {
