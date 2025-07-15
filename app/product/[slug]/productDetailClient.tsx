@@ -55,7 +55,7 @@ export default function ProductDetailClient({ product, related }: Props) {
 
           <button
             onClick={handleAdd}
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+            className="bg-[#f6bd3d] text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
           >
             Add to Cart
           </button>

@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useCartStore } from '@/lib/store';
@@ -6,16 +7,13 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export function ClientLayout({ children }: { children: React.ReactNode }) {
-  // const cartCount = useCartStore((state) =>
-  //   state.cart.reduce((sum, item) => sum + item.quantity, 0)
-  // );
-
   return (
-    <>
-     <Toaster position="top-right" />
+    <div className="flex flex-col min-h-screen">
+      <Toaster position="top-right" />
       <Navbar />
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
+
